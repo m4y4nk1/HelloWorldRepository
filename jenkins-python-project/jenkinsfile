@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     stages {
-
         stage('Setup Environment') {
             steps {
                 sh '''
@@ -16,6 +15,7 @@ pipeline {
             steps {
                 sh '''
                 cd jenkins-python-project
+                export PYTHONPATH=$PWD
                 ../venv/bin/pytest -v
                 '''
             }
