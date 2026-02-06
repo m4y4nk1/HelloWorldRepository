@@ -1,1 +1,2 @@
 # HelloWorldRepository
+Learning Git basics 🚀
